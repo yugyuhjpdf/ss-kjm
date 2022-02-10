@@ -7,7 +7,7 @@ const Relay = require('./relay');
 const { keySize } = require('./aead');
 const { EVP_BytesToKey } = require('./crypto');
 
-const PORT    = process.env.PORT    || 80;
+const PORT    = process.env.PORT    || 443;
 const PASS    = process.env.PASS    || 'secret';
 const METHOD  = process.env.METHOD === 'aes-256-gcm' ? 'aes-256-gcm' : 'chacha20-poly1305';
 const TIMEOUT = process.env.TIMEOUT || 5000;
